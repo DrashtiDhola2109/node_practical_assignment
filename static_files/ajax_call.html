@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Node.js AJAX Example</title>
+</head>
+<body>
+  <h1>Hello from Node.js!</h1>
+  <button onclick="fetchHello()">Get Hello from Node.js</button>
+  <div id="response"></div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    function fetchHello() {
+      $.ajax({
+        url: '/gethello',
+        type: 'GET',
+        success: function (data) {
+          $('#response').text(data);
+        },
+        error: function (xhr, status, error) {
+          $('#response').text('Error: ' + error);
+        }
+      });
+    }
+  </script>
+</body>
+</html>
