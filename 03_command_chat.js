@@ -1,5 +1,5 @@
 const readline = require("readline");
-const { getITCourseInfo } = require("./it_course_bot");
+const { getITCourseInfo } = require("./03_it_course_bot");
 
 const rl = readline.createInterface({
   input: process.stdin,
