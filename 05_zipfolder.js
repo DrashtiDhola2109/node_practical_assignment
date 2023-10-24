@@ -33,7 +33,7 @@ function createZipFolder(sourceFolderPath, targetZipPath) {
 }
 
 // Usage example
-const sourceFolder = path.join('./', 'static_files');
+const sourceFolder = path.join('C:/Users/DELL/OneDrive/Pictures/', 'iphone');
 const targetZipFile = path.join('./', 'compressed_folder.zip');
 
 createZipFolder(sourceFolder, targetZipFile);

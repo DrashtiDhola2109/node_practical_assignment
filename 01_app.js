@@ -17,7 +17,7 @@ var server = http.createServer((req,res)=>{
 
     if (u1.pathname=="/process" && req.method === 'GET') 
     {
-        res.write(u1.query.fname+" "+u1.query.age) 
+        res.write("Get method\n" + u1.query.fname+" "+u1.query.age) 
         res.end();        
     }
     else if(u1.pathname=="/process" && req.method === 'POST') 
@@ -29,7 +29,7 @@ var server = http.createServer((req,res)=>{
         });
         req.on('end', () => {
             console.log(body);
-            res.end('ok  => '+ body);
+            res.end('Post method\n'+ body);
             //fname=vibha&age=25
         });        
     }

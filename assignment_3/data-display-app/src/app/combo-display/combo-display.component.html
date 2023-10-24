@@ -1,0 +1,9 @@
+<p>combo-display works!</p>
+<div>
+    <select [(ngModel)]="selectedValue">
+      <option *ngFor="let option of options" [value]="option">{{ option }}</option>
+    </select>
+    <p *ngIf="selectedValue === 'Surat'"><img src="assets/surat.jpeg" /></p>
+    <p *ngIf="selectedValue === 'Ahmedabad'"><img src="assets/ahmedabad.jpeg" /></p>
+    <p *ngIf="selectedValue === 'Vadodara'"><img src="assets/vadodara.jpeg" /></p>
+  </div>

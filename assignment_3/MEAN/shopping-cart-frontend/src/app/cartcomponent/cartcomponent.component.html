@@ -1,0 +1,17 @@
+<table>
+    <tr>
+      <th>Name</th>
+      <th>Price</th>
+      <th>Quantity</th>
+      <th>Actions</th>
+    </tr>
+    <tr *ngFor="let item of cartItems">
+      <td>{{ item.name }}</td>
+      <td>{{ item.price }}</td>
+      <td>{{ item.quantity }}</td>
+      <td>
+        <button (click)="selectCartItem(item)">Edit</button>
+        <button (click)="deleteCartItem(item._id)">Delete</button>
+      </td>
+    </tr>
+  </table>

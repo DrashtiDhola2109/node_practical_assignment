@@ -1,0 +1,24 @@
+<p>textcombo works!</p>
+<div>
+    <select [(ngModel)]="selectedValue">
+      <option *ngFor="let option of options" [value]="option">{{ option }}</option>
+    </select>
+    <p *ngIf="selectedValue === 'Textbox'"><input  type="text" value="this is textbox" /></p>
+    <p *ngIf="selectedValue === 'TextArea'"><textarea id="w3review" name="w3review" rows="4" cols="50">
+        1) Angular
+1) Create Angular application with routing link assigned for following requirements:.
+- Display integer, sting, date data in a component.
+- Display array values in html list.
+- Display array in combo.
+- Take a combo with two values (textbox, textarea). Display textbox or textarea
+depending on selection of a combo.
+-Make another component for user input form with user’s personal details, take input
+and display data on submit.
+
+2) MEAN
+Design and develop shopping cart system.
+Backend - Products (CRUD) API in Express.
+Frontend
+- Call CRUD API
+- Display products in grid (3xn)</textarea></p>
+  </div>

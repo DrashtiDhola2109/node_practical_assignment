@@ -1,7 +1,7 @@
 const fetch = await import('node-fetch').then((mod) => mod.default);;
 
 async function fetchGoogleData() {
-  const searchQuery = 'expressjs.com/en/starter/hello-world.html'; // Replace with your desired search query
+  const searchQuery = 'expressjs tutorial'; // Replace with your desired search query
   const url = `https://www.google.com/search?q=${encodeURIComponent(searchQuery)}`;
 
   try {
